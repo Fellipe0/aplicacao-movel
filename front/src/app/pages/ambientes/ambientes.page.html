@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Ambientes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Capacidade: </ion-label>
+    <ion-input type="number" [(ngModel)]="obj.capacidade"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Descricao: </ion-label>
+    <ion-input [(ngModel)]="obj.descricao"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>IP da Camera: </ion-label>
+    <ion-input [(ngModel)]="obj.ipCamera"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Nome do Ambiente: </ion-label>
+    <ion-input [(ngModel)]="obj.nomeAmbiente"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Tipo do Ambiente: </ion-label>
+    <ion-input [(ngModel)]="obj.tipoAmbiente"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Id do Bloco: </ion-label>
+    <ion-input type="number" [(ngModel)]="obj.blocoId"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="submit()">cadastrar</ion-button>
+</ion-content>

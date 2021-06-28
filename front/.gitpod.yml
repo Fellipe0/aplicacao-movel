@@ -1,0 +1,4 @@
+tasks:
+  - before: npm install -g @ionic/cli && npm install -g @angular/cli
+    init: npm install
+    command: npm run start

@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Embarcados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Descricao Embarcado: </ion-label>
+    <ion-input [(ngModel)]="obj.descricaoEmbarcado"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Firmware: </ion-label>
+    <ion-input [(ngModel)]="obj.firmware"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ip Embarcado: </ion-label>
+    <ion-input [(ngModel)]="obj.ipEmbarcado"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ip Gateway: </ion-label>
+    <ion-input [(ngModel)]="obj.ipGateway"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>MAC: </ion-label>
+    <ion-input [(ngModel)]="obj.mac"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Password Wi-Fi: </ion-label>
+    <ion-input [(ngModel)]="obj.passwordWifi"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>ssid: </ion-label>
+    <ion-input [(ngModel)]="obj.ssid"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Tipo Rede: </ion-label>
+    <ion-input [(ngModel)]="obj.tipoRede"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ambiente Id: </ion-label>
+    <ion-input type="number" [(ngModel)]="obj.ambienteId"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="submit()">cadastra</ion-button>
+
+</ion-content>
