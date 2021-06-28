@@ -15,3 +15,7 @@ Projeto feito para a obtenção de notas no nono período da PUC-GO.
 - Maven
 - Spring Boot
 - Lombok
+
+# Autores
+- Felipe Libório Lavrador
+- Paulo Henrique de Campos
